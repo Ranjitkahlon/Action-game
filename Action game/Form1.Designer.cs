@@ -92,6 +92,7 @@
             this.Btn_Shoot.TabIndex = 5;
             this.Btn_Shoot.Text = "Shoot";
             this.Btn_Shoot.UseVisualStyleBackColor = true;
+            this.Btn_Shoot.Click += new System.EventHandler(this.Btn_Shoot_Click);
             // 
             // btn_ShootAway
             // 
@@ -102,6 +103,7 @@
             this.btn_ShootAway.TabIndex = 6;
             this.btn_ShootAway.Text = "Shoot Away";
             this.btn_ShootAway.UseVisualStyleBackColor = true;
+            this.btn_ShootAway.Click += new System.EventHandler(this.btn_ShootAway_Click);
             // 
             // btn_PA
             // 
@@ -112,6 +114,7 @@
             this.btn_PA.TabIndex = 7;
             this.btn_PA.Text = "Play Again";
             this.btn_PA.UseVisualStyleBackColor = true;
+            this.btn_PA.Click += new System.EventHandler(this.btn_PA_Click);
             // 
             // Actiongame
             // 
