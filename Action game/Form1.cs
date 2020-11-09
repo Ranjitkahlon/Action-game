@@ -70,5 +70,15 @@ namespace Action_game
             btn_ShootAway.Enabled = true;//disable the shootaway button//
             Btn_Shoot.Enabled = false;//disable the shoot button//
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_rule_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
