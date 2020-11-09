@@ -21,5 +21,17 @@ namespace Action_game
         {
 
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Actiongame game_obj = new Actiongame();
+            game_obj.Show();
+            this.Close();
+        }
+
+        private void rules_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

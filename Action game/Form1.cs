@@ -78,7 +78,9 @@ namespace Action_game
 
         private void btn_rule_Click(object sender, EventArgs e)
         {
-
+            rules rules_obj = new rules();
+            rules_obj.Show();
+            this.Hide();
         }
     }
 }
