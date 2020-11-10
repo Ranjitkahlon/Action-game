@@ -83,6 +83,8 @@ namespace Action_game
             Btn_Shoot.Enabled = false;//disable the shoot button//
             btn_ShootAway.Enabled = false;//disable the shootaway button//
 
+            //code to display image in picture box on button click  
+
             Assembly myAssembly = Assembly.GetExecutingAssembly();
 
             Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shoot away.gif");
@@ -90,6 +92,7 @@ namespace Action_game
             Bitmap bmp_Object = new Bitmap(myStream);
 
             Image_box.Image = bmp_Object;
+
 
 
         }
@@ -98,14 +101,6 @@ namespace Action_game
         {
             Btn_Shoot.Enabled = false; //disable the shoot button//
             btn_ShootAway.Enabled = false;//disable the shootaway button//
-
-            Assembly myAssembly = Assembly.GetExecutingAssembly();
-
-            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shoot away.gif");
-
-            Bitmap bmp_Object = new Bitmap(myStream);
-
-            Image_box.Image = bmp_Object;
 
 
         }
@@ -119,7 +114,7 @@ namespace Action_game
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
 
-            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shooting.gif");
+            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shoot away.gif");
 
             Bitmap bmp_Object = new Bitmap(myStream);
 

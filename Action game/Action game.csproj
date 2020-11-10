@@ -113,5 +113,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\shooting.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\playagin.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
