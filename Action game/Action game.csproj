@@ -96,16 +96,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\giphy.gif" />
+    <EmbeddedResource Include="Resources\istockphoto-1150477705-612x612.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\istockphoto-1150477705-612x612.jpg" />
+    <EmbeddedResource Include="Resources\giphy.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\giphy %281%29.gif" />
+    <EmbeddedResource Include="Resources\load.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\giphy %281%291.gif" />
+    <EmbeddedResource Include="Resources\shoot away.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\shooting.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
