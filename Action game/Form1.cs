@@ -89,7 +89,7 @@ namespace Action_game
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
 
-            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shoot away.gif");
+            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.playagin.jpg");
 
             Bitmap bmp_Object = new Bitmap(myStream);
 
@@ -121,6 +121,10 @@ namespace Action_game
             Bitmap bmp_Object = new Bitmap(myStream);
 
             Image_box.Image = bmp_Object;
+
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
+
+            Sound_Object.Play();
 
         }
 
