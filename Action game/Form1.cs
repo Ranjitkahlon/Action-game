@@ -48,7 +48,9 @@ namespace Action_game
 
 
 
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.load.wav);
 
+            Sound_Object.Play();
 
 
 
