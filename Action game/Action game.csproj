@@ -119,5 +119,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\load.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\sound1.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
