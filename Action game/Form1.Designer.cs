@@ -101,7 +101,7 @@
             // btn_ShootAway
             // 
             this.btn_ShootAway.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ShootAway.Location = new System.Drawing.Point(483, 88);
+            this.btn_ShootAway.Location = new System.Drawing.Point(483, 90);
             this.btn_ShootAway.Name = "btn_ShootAway";
             this.btn_ShootAway.Size = new System.Drawing.Size(128, 80);
             this.btn_ShootAway.TabIndex = 6;

@@ -47,7 +47,7 @@ namespace Action_game
             Image_box.Image = bmp_Object;
 
 
-
+            // code for sound//
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.load1);
 
             Sound_Object.Play();
@@ -121,6 +121,10 @@ namespace Action_game
             Bitmap bmp_Object = new Bitmap(myStream);
 
             Image_box.Image = bmp_Object;
+
+
+
+            // code for sound//
 
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
 
