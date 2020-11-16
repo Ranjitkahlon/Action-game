@@ -15,6 +15,7 @@ namespace Action_game
 {
     public partial class Actiongame : Form
     {
+        Actiongamelogic game_object = new Actiongamelogic();
         public Actiongame()
         {
             InitializeComponent();
@@ -54,16 +55,17 @@ namespace Action_game
 
 
 
+                //code for logic//
+                game_object.load_data = 1;
 
 
-
-
-        }
+            }
 
         private void btn_spin_Click(object sender, EventArgs e)
         {
             Btn_Shoot.Enabled = true;//Enable the shoot buuton//
-            btn_spin.Enabled = false;//disable the spin button//
+            btn_ShootAway.Enabled = true;//Enable the shootaway  buuton//
+             btn_spin.Enabled = false;//disable the spin button//
 
 
             //code to display image in picture box on button click  
@@ -76,7 +78,13 @@ namespace Action_game
 
             Image_box.Image = bmp_Object;
 
-        }
+                    //code for spin
+                Random Rnd_obj = new Random();
+                game_object.spin_data = Rnd_obj.Next(1, 7);
+
+                MessageBox.Show("Bullet Position after spining the chamber is " + game_object.spin_data.ToString());
+
+            }
 
         private void btn_PA_Click(object sender, EventArgs e)
         {
@@ -101,8 +109,8 @@ namespace Action_game
 
         private void btn_ShootAway_Click(object sender, EventArgs e)
         {
-            Btn_Shoot.Enabled = false; //disable the shoot button//
-            btn_ShootAway.Enabled = false;//disable the shootaway button//
+            Btn_Shoot.Enabled = true; //disable the shoot button//
+            btn_ShootAway.Enabled = true;//disable the shootaway button//
 
 
         }
@@ -110,7 +118,7 @@ namespace Action_game
         private void Btn_Shoot_Click(object sender, EventArgs e)
         {
             btn_ShootAway.Enabled = true;//disable the shootaway button//
-            Btn_Shoot.Enabled = false;//disable the shoot button//
+            Btn_Shoot.Enabled = true;//disable the shoot button//
 
             //code to display image in picture box on button click  
 

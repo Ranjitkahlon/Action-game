@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Actiongame));
             this.btn_Load = new System.Windows.Forms.Button();
-            this.btn_spin = new System.Windows.Forms.Button();
-            this.Image_box = new System.Windows.Forms.PictureBox();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.Btn_Shoot = new System.Windows.Forms.Button();
             this.btn_ShootAway = new System.Windows.Forms.Button();
             this.btn_PA = new System.Windows.Forms.Button();
             this.btn_rule = new System.Windows.Forms.Button();
+            this.Image_box = new System.Windows.Forms.PictureBox();
+            this.btn_spin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Image_box)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,31 +50,6 @@
             this.btn_Load.Text = "Load";
             this.btn_Load.UseVisualStyleBackColor = true;
             this.btn_Load.Click += new System.EventHandler(this.btn_Load_Click);
-            // 
-            // btn_spin
-            // 
-            this.btn_spin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_spin.BackgroundImage")));
-            this.btn_spin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_spin.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_spin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_spin.ForeColor = System.Drawing.Color.Red;
-            this.btn_spin.Location = new System.Drawing.Point(221, 317);
-            this.btn_spin.Name = "btn_spin";
-            this.btn_spin.Size = new System.Drawing.Size(147, 73);
-            this.btn_spin.TabIndex = 2;
-            this.btn_spin.Text = "Spin";
-            this.btn_spin.UseVisualStyleBackColor = true;
-            this.btn_spin.Click += new System.EventHandler(this.btn_spin_Click);
-            // 
-            // Image_box
-            // 
-            this.Image_box.Image = global::Action_game.Properties.Resources.istockphoto_1150477705_612x612;
-            this.Image_box.Location = new System.Drawing.Point(60, 12);
-            this.Image_box.Name = "Image_box";
-            this.Image_box.Size = new System.Drawing.Size(382, 258);
-            this.Image_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Image_box.TabIndex = 3;
-            this.Image_box.TabStop = false;
             // 
             // btn_Exit
             // 
@@ -130,6 +105,31 @@
             this.btn_rule.Text = "Rule";
             this.btn_rule.UseVisualStyleBackColor = true;
             this.btn_rule.Click += new System.EventHandler(this.btn_rule_Click);
+            // 
+            // Image_box
+            // 
+            this.Image_box.Image = global::Action_game.Properties.Resources.one;
+            this.Image_box.Location = new System.Drawing.Point(36, 45);
+            this.Image_box.Name = "Image_box";
+            this.Image_box.Size = new System.Drawing.Size(382, 219);
+            this.Image_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Image_box.TabIndex = 3;
+            this.Image_box.TabStop = false;
+            // 
+            // btn_spin
+            // 
+            this.btn_spin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_spin.BackgroundImage")));
+            this.btn_spin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_spin.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_spin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_spin.ForeColor = System.Drawing.Color.Red;
+            this.btn_spin.Location = new System.Drawing.Point(221, 317);
+            this.btn_spin.Name = "btn_spin";
+            this.btn_spin.Size = new System.Drawing.Size(147, 73);
+            this.btn_spin.TabIndex = 2;
+            this.btn_spin.Text = "Spin";
+            this.btn_spin.UseVisualStyleBackColor = true;
+            this.btn_spin.Click += new System.EventHandler(this.btn_spin_Click);
             // 
             // Actiongame
             // 

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Action_game
 {
-    class Actiongamelogic
+    public class Actiongamelogic
     {
+        public int load_data { get; set; }
+        public int spin_data { get; set; }
     }
 }
