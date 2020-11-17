@@ -8,24 +8,24 @@ namespace Action_game
 {
     public class Actiongamelogic
     {
-        public int load_data { get; set; }
-        public int spin_data { get; set; }
-        public int shoot_data { get; set; }
+        public int Load_data { get; set; }
+        public int Spin_data { get; set; }
+        public int Shoot_data { get; set; }
 
         public int shoot_method()
         {
-            if (load_data == spin_data)
+            if (Load_data == Spin_data)
             {
                 return 1;
             }
-            else if (spin_data == 6)
+            else if (Spin_data == 6)
             {
-                spin_data = 1;
+                Spin_data = 1;
                 return 0;
             }
             else
             {
-                spin_data++;
+                Spin_data++;
                 return 0;
             }
 

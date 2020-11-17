@@ -56,7 +56,7 @@ namespace Action_game
 
 
                 //code for logic//
-                game_object.load_data = 1;
+                game_object.Load_data = 1;
 
 
             }
@@ -78,11 +78,11 @@ namespace Action_game
 
             Image_box.Image = bmp_Object;
 
-                    //code for spin
+                    //logic//
                 Random Rnd_obj = new Random();
-                game_object.spin_data = Rnd_obj.Next(1, 7);
+                game_object.Spin_data = Rnd_obj.Next(1, 7);
 
-                MessageBox.Show("Bullet Position after spining the chamber is " + game_object.spin_data.ToString());
+                MessageBox.Show("Bullet Position after spining the chamber is " + game_object.Spin_data.ToString());
 
             }
 
@@ -145,8 +145,8 @@ namespace Action_game
 
             Sound_Object.Play();
             //logic 
-            game_object.shoot_data = game_object.shoot_method();
-            if (game_object.shoot_data == 1)
+            game_object.Shoot_data = game_object.shoot_method();
+            if (game_object.Shoot_data == 1)
             {
                 
                 MessageBox.Show("Bullet shot on your head. You are dead");
