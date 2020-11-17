@@ -12,6 +12,10 @@ namespace Action_game
         public int Spin_data { get; set; }
         public int Shoot_data { get; set; }
 
+        public int Shootaway_data { get; set; }
+
+        public int chances = 0;
+
         public int shoot_method()
         {
             if (Load_data == Spin_data)
@@ -28,6 +32,7 @@ namespace Action_game
                 Spin_data++;
                 return 0;
             }
+            
 
         }
     }

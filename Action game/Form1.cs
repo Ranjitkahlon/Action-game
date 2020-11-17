@@ -109,18 +109,38 @@ namespace Action_game
 
         private void btn_ShootAway_Click(object sender, EventArgs e)
         {
-            Btn_Shoot.Enabled = true; //disable the shoot button//
-            btn_ShootAway.Enabled = true;//disable the shootaway button//
+            if (game_object.chances <= 2)
+            {
+                game_object.Shoot_data = game_object.shoot_method();
+                if (game_object.Shoot_data == 1)
+                {
+                    // Sound code
+                    System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
 
+                    Sound_Object.Play();
+                    MessageBox.Show("Wow!! you are safe. you win the game");
+                    Btn_Shoot.Enabled = false;
+                    btn_ShootAway.Enabled = false;
+                }
+                else
+                {
+                    game_object.chances++;
+                    if (game_object.chances == 2)
+                    {
+                        MessageBox.Show("Your 2 chances are finished. you lose the game");
+                    }
+                    else
+                    {
+                        MessageBox.Show("emply shoot");
+                    }
+                }
 
-            // code for sound//
-
-            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
-
-            Sound_Object.Play();
-
-
+            }
         }
+
+
+
+
 
         private void Btn_Shoot_Click(object sender, EventArgs e)
         {
@@ -131,7 +151,7 @@ namespace Action_game
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
 
-            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shoot away.gif");
+            Stream myStream = myAssembly.GetManifestResourceStream("Action_game.Resources.shoot.gif");
 
             Bitmap bmp_Object = new Bitmap(myStream);
 

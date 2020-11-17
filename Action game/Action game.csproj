@@ -109,7 +109,7 @@
     <EmbeddedResource Include="Resources\shoot away.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shoot.gif" />
+    <EmbeddedResource Include="Resources\shoot.gif" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\shooting.gif" />
