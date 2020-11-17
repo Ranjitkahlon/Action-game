@@ -113,6 +113,13 @@ namespace Action_game
             btn_ShootAway.Enabled = true;//disable the shootaway button//
 
 
+            // code for sound//
+
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
+
+            Sound_Object.Play();
+
+
         }
 
         private void Btn_Shoot_Click(object sender, EventArgs e)
@@ -137,6 +144,18 @@ namespace Action_game
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
 
             Sound_Object.Play();
+            //logic 
+            game_object.shoot_data = game_object.shoot_method();
+            if (game_object.shoot_data == 1)
+            {
+                
+                MessageBox.Show("Bullet shot on your head. You are dead");
+            }
+            else
+            {
+                MessageBox.Show("emply shoot");
+            }
+
 
         }
 
