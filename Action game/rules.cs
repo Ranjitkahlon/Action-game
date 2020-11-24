@@ -33,5 +33,10 @@ namespace Action_game
         {
 
         }
+
+        private void lbl_rulenumberone_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

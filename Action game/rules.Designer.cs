@@ -32,6 +32,10 @@
             this.lbl_rulenumberone = new System.Windows.Forms.Label();
             this.Lbl_rule2 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
+            this.lbl_rule3 = new System.Windows.Forms.Label();
+            this.lbl_rule4 = new System.Windows.Forms.Label();
+            this.lbl_rule5 = new System.Windows.Forms.Label();
+            this.lbl_rule6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Rule
@@ -49,21 +53,22 @@
             // 
             this.lbl_rulenumberone.AutoSize = true;
             this.lbl_rulenumberone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rulenumberone.Location = new System.Drawing.Point(112, 83);
+            this.lbl_rulenumberone.Location = new System.Drawing.Point(116, 64);
             this.lbl_rulenumberone.Name = "lbl_rulenumberone";
-            this.lbl_rulenumberone.Size = new System.Drawing.Size(366, 20);
+            this.lbl_rulenumberone.Size = new System.Drawing.Size(293, 20);
             this.lbl_rulenumberone.TabIndex = 1;
-            this.lbl_rulenumberone.Text = "1. Firstly, You have to load and spin the gun.";
+            this.lbl_rulenumberone.Text = "1. Firstly, You have to load the gun.\r\n";
+            this.lbl_rulenumberone.Click += new System.EventHandler(this.lbl_rulenumberone_Click);
             // 
             // Lbl_rule2
             // 
             this.Lbl_rule2.AutoSize = true;
             this.Lbl_rule2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_rule2.Location = new System.Drawing.Point(112, 141);
+            this.Lbl_rule2.Location = new System.Drawing.Point(116, 106);
             this.Lbl_rule2.Name = "Lbl_rule2";
-            this.Lbl_rule2.Size = new System.Drawing.Size(499, 20);
+            this.Lbl_rule2.Size = new System.Drawing.Size(379, 20);
             this.Lbl_rule2.TabIndex = 2;
-            this.Lbl_rule2.Text = "2. You have two chance for shoot the gun and win the game .";
+            this.Lbl_rule2.Text = "2. Once load a gun, then have to spin the gun.";
             // 
             // btn_back
             // 
@@ -76,11 +81,54 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // lbl_rule3
+            // 
+            this.lbl_rule3.AutoSize = true;
+            this.lbl_rule3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_rule3.Location = new System.Drawing.Point(116, 144);
+            this.lbl_rule3.Name = "lbl_rule3";
+            this.lbl_rule3.Size = new System.Drawing.Size(327, 20);
+            this.lbl_rule3.TabIndex = 4;
+            this.lbl_rule3.Text = "3. The position of bullet is randomly set.";
+            // 
+            // lbl_rule4
+            // 
+            this.lbl_rule4.AutoSize = true;
+            this.lbl_rule4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_rule4.Location = new System.Drawing.Point(116, 188);
+            this.lbl_rule4.Name = "lbl_rule4";
+            this.lbl_rule4.Size = new System.Drawing.Size(311, 20);
+            this.lbl_rule4.TabIndex = 5;
+            this.lbl_rule4.Text = "4.  You have two chance to win game.";
+            this.lbl_rule4.UseWaitCursor = true;
+            // 
+            // lbl_rule5
+            // 
+            this.lbl_rule5.AutoSize = true;
+            this.lbl_rule5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_rule5.Location = new System.Drawing.Point(116, 238);
+            this.lbl_rule5.Name = "lbl_rule5";
+            this.lbl_rule5.Size = new System.Drawing.Size(336, 20);
+            this.lbl_rule5.TabIndex = 6;
+            this.lbl_rule5.Text = "5. You can shoot on head or shoot away.";
+            // 
+            // lbl_rule6
+            // 
+            this.lbl_rule6.AutoSize = true;
+            this.lbl_rule6.Location = new System.Drawing.Point(117, 327);
+            this.lbl_rule6.Name = "lbl_rule6";
+            this.lbl_rule6.Size = new System.Drawing.Size(0, 13);
+            this.lbl_rule6.TabIndex = 7;
+            // 
             // rules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_rule6);
+            this.Controls.Add(this.lbl_rule5);
+            this.Controls.Add(this.lbl_rule4);
+            this.Controls.Add(this.lbl_rule3);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.Lbl_rule2);
             this.Controls.Add(this.lbl_rulenumberone);
@@ -99,5 +147,9 @@
         private System.Windows.Forms.Label lbl_rulenumberone;
         private System.Windows.Forms.Label Lbl_rule2;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Label lbl_rule3;
+        private System.Windows.Forms.Label lbl_rule4;
+        private System.Windows.Forms.Label lbl_rule5;
+        private System.Windows.Forms.Label lbl_rule6;
     }
 }

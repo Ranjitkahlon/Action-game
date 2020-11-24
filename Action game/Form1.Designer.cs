@@ -147,6 +147,7 @@
             this.Controls.Add(this.btn_Load);
             this.Name = "Actiongame";
             this.Text = "Action game";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Load += new System.EventHandler(this.Actiongame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Image_box)).EndInit();
             this.ResumeLayout(false);

@@ -159,9 +159,9 @@ namespace Action_game
 
 
 
-            // code for sound//
 
-            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
+                       // code for sound//
+  System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(Action_game.Properties.Resources.sound1);
 
             Sound_Object.Play();
             //logic 
